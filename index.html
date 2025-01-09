@@ -16,22 +16,26 @@
         <div class="error">
             <p>Invalid city name</p>
         </div>
+
+
+        <a href="history.html">Check 7 days history of your city </a>
+
         <div class="weather">
             <img src="images/rain.png" class="weather-icon">
-            <h1 class="temp">22℃</h1>
+            <h1 class="temp"></h1>
             <h2 class="city">New York</h2>
             <div class="details">
                 <div class="col">
                     <img src="images/humidity.png">
                     <div>
-                        <p class="humidity">50%</p>
+                        <p class="humidity"></p>
                         <p>Humidity</p>
                     </div>
                 </div>
                 <div class="col">
                     <img src="images/wind.png">
                     <div>
-                        <p class="wind">15 km/h</p>
+                        <p class="wind"></p>
                         <p>Wind Speed</p>
                     </div>
                 </div>
@@ -59,6 +63,8 @@
 
 
             var data = await response.json();
+
+            console.log(data)
 
 
             document.querySelector(".city").innerHTML = data.name;
